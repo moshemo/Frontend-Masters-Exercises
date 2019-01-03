@@ -49,10 +49,10 @@ const newDevelopment = [
     }
 ]
 
-let isFalse = [];
-let isTrue = [];
+var isFalse = [];
+var isTrue = [];
 
-let getRooms = newDevelopment
+const getRooms = newDevelopment
     .map(room => room.rooms)
     .reduce((acc, cur) => acc.concat(cur))
     .reduce((acc, cur) => {
